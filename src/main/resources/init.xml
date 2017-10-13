@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appconfig>
+	<!-- 数据库连接配置 -->
+	<connections>
+		<connection name="mysql" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/devplatform"
+		 username="root" password="111111"></connection>
+		<connection name="sqlserver" driver="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
+		url="jdbc:sqlserver://localhost:1433;DatabaseName=Student"
+		username="sa" password="7799"></connection>
+	</connections>
+	<!-- 模板路径配置 -->
+	<templates>
+		<template id="1" name="dto" type="demo" path="demo/dto/Dto.j"></template>
+		<template id="2" name="dto" type="custom" path="custom/dto/Dto.j"></template>
+		
+		<template id="3" name="dao" type="demo" path="demo/dao/DaoImpl.j"></template>
+		<template id="4" name="dao" type="custom" path="custom/dao/DaoImpl.j"></template>
+		
+		<template id="5" name="idao" type="demo" path="demo/dao/IDao.j"></template>
+		<template id="6" name="idao" type="custom" path="custom/dao/IDao.j"></template>
+		
+		<template id="7" name="service" type="demo" path="demo/service/ServiceImpl.j"></template>
+		<template id="8" name="service" type="custom" path="custom/service/ServiceImpl.j"></template>
+	
+		<template id="9" name="iservice" type="demo" path="demo/service/IService.j"></template>
+		<template id="10" name="iservice" type="custom" path="custom/service/IService.j"></template>
+		
+		<template id="11" name="controller" type="demo" path="demo/controller/Controller.j"></template>
+		<template id="12" name="controller" type="custom" path="custom/controller/Controller.j"></template>
+		
+		<template id="13" name="listpage" type="demo" path="demo/view/list.jsp"></template>
+		<template id="14" name="listpage" type="custom" path="custom/view/list.jsp"></template>
+		
+		<template id="15" name="editpage" type="demo" path="demo/view/edit.jsp"></template>
+		<template id="16" name="editpage" type="custom" path="custom/view/edit.jsp"></template>
+	</templates>
+</appconfig>
